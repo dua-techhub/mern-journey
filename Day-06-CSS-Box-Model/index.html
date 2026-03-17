@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Practice</title>
+
+    <style>
+        /* Basic reset so browser default spacing doesn't mess things up */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Just giving the page a clean background and centering everything */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container to hold all elements nicely in the center */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Common style for all div boxes */
+        .card {
+            border: 4px solid red;
+            width: 250px;
+            padding: 20px;
+            margin: 15px;
+            background-color: white;
+            text-align: center;
+
+            /* smooth animation when hovering */
+            transition: all 0.3s ease;
+        }
+
+        /* Small hover effect to make it feel interactive */
+        .card:hover {
+            transform: scale(1.05);
+            background-color: #ffeaea;
+        }
+
+        /* This one is a special box to demonstrate padding impact */
+        .box {
+            width: 300px;
+            height: 300px;
+            padding: 80px; /* notice how content shrinks because padding increases */
+            border: 2px solid black;
+            background-color: #e3f2fd;
+        }
+
+        /* Span converted into a box-like element */
+        .inline-box {
+            display: inline-block; /* makes span behave like a box */
+            width: 250px;
+            height: 250px;
+            padding: 20px;
+            margin: 15px;
+            border: 2px solid black;
+            background-color: #e8f5e9;
+            text-align: center;
+        }
+
+        /* A simple heading just to make UI look better */
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS Box Model Demo</h1>
+
+        <!-- Normal div boxes -->
+        <div class="card">
+            Welcome to div
+        </div>
+
+        <div class="card">
+            Welcome to div 2.0
+        </div>
+
+        <!-- Special box showing how padding affects layout -->
+        <div class="card box">
+            This box has large padding
+        </div>
+
+        <!-- Span behaving like a block element -->
+        <span class="inline-box">
+            Hi, I am Dua.
+        </span>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* Resetting default browser spacing (always a good habit) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Just giving the page some breathing space */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+/* Styling the heading */
+.title {
+    background-color: antiquewhite;
+    border-right: 5px solid black;
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Common styles for all paragraphs */
+.text-box {
+    width: 350px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border: 5px solid black;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+/* Individual variations (instead of repeating full code) */
+
+/* First box */
+.box-1 {
+    background-color: rgb(207, 186, 186);
+}
+
+/* Second box */
+.box-2 {
+    background-color: rgb(77, 171, 171);
+    margin-left: 40px; /* slight shift for variation */
+}
+
+/* Third box */
+.box-3 {
+    background-color: aliceblue;
+    margin-left: 80px; /* more shift */
+}
