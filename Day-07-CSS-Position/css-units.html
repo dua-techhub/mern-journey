@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units Practice</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Practice: percentage width */
+        /*
+        .box {
+            border: 2px solid red;
+            width: 25%;
+        }
+        */
+
+        /* Practice: parent and child with percentage */
+        /*
+        .parent {
+            border: 1px solid black;
+            background: rgb(146, 146, 45);
+            width: 50%;
+        }
+
+        .child {
+            border: 1px solid black;
+            background: aqua;
+            width: 50%;
+        }
+        */
+
+        /* Practice: viewport units */
+        /*
+        .container {
+            height: 100vh;
+            width: 50vw;
+            background: beige;
+        }
+        */
+
+        /* Final example */
+        .wrapper {
+            font-size: 1em;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: lightblue;
+            border: 3px solid darkblue;
+            padding: 10px;
+            margin: 1em 0;
+        }
+
+        .px {
+            width: 200px;
+        }
+
+        .vw {
+            width: 10vw;
+        }
+
+        .em {
+            width: 10em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Units Practice</h1>
+
+    <!-- Uncomment to test -->
+    <!--
+    <div class="box">Welcome to Code Help</div>
+    -->
+
+    <!--
+    <div class="parent">
+        <div class="child">Child</div>
+    </div>
+    -->
+
+    <!--
+    <div class="container">Viewport Example</div>
+    -->
+
+    <div class="wrapper">
+        <div class="box px">Width: 200px</div>
+        <div class="box vw">Width: 10vw</div>
+        <div class="box em">Width: 10em</div>
+    </div>
+
+</body>
+</html>

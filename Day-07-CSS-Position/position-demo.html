@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Practice</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        position: relative;
+        height: 1500px;
+        background: beige;
+        padding: 20px;
+      }
+
+      img {
+        margin: 10px;
+        border: 2px solid black;
+      }
+
+      /* fixed position example */
+      .image4 {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
+
+      /* sticky position example */
+      /*
+        .image3 {
+            position: sticky;
+            top: 100px;
+        }
+        */
+
+      .box {
+        background: aquamarine;
+        height: 300px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Position Practice</h1>
+
+    <div class="container">
+      <img src="cyber1.jpg" width="300" alt="Image 1" />
+      <img src="cyber2.jpg" width="300" alt="Image 2" />
+      <img src="cyber3.jpg" width="300" alt="Image 3" />
+      <img src="cyber4.jpg" width="300" alt="Image 4" class="image4" />
+    </div>
+
+    <div class="box"></div>
+  </body>
+</html>
