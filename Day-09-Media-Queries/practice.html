@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        background: #c77c7c;
+        border: 2px solid black;  
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+        margin: 10px;
+      }
+      #boxleft {
+        background: rgb(159, 159, 214);
+        width: 47%;
+        border: 1px solid blue;
+        margin: 3px;
+        padding: 2px;
+      }
+      #boxright {
+        background: rgb(207, 182, 229);
+   margin: 3px;
+        padding: 2px;
+        width: 47%;
+        border: 1px solid brown;
+      }
+      p {
+        border: 1px solid black;
+      }
+      @media (max-width:640px) 
+      {
+        .container{
+    flex-direction: column;
+        }
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="boxleft">
+        <p>Text 1</p>
+        <p>Text 2</p>
+      </div>
+      <div id="boxright">
+        <img src="../Day-04-Media-Tags/log.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
