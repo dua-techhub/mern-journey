@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadow</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      background: beige;
+      height: 650px;
+      border: 2px solid black;
+      justify-content: center;
+      align-items: center;
+    }
+    .div {
+      --primary-color: brown;
+      --custom-width: 330px;
+      background: bisque;
+      width: var(--custom-width);
+      height: 330px;
+      margin: 5px;
+      padding: 5px;
+      border: 2px solid var(--primary-color);
+      /* box shadow */
+      /* box-shadow: -10px 15px brown; */
+      /* box shadow using blur radius */
+      /* box-shadow: 10px 15px 8px brown; */
+      /* Spread radius */
+      /* box-shadow: 10px 15px 5px 10px brown; */
+      /* inset shadow */
+      /* box-shadow: inset 10px 15px brown; 
+        */
+      /* multiple shadow */
+
+      box-shadow:
+        5px 5px red,
+        5px 5px green;
+    }
+    .heading {
+      text-shadow: rgb(133, 8, 8) 12px 12px 2px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="div">
+        <img src="../Day-04-Media-Tags/log.jpg" alt="" />
+        <h1 class="heading">Welcome to my profile</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,
+          mollitia omnis. Omnis sed odit ipsa unde at labore, voluptatem quo id
+          sapiente saepe dolor explicabo adipisci, ea recusandae, hic quod!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

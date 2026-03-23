@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animations</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      background: pink;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* BOX 1 → moves right */
+    .box1 {
+      width: 150px;
+      height: 80px;
+      background: rgb(64, 64, 129);
+      border-radius: 10px;
+      position: absolute;
+      top: 50px;
+
+      animation: moveRight 5s infinite ease-in-out;
+    }
+
+    /* BOX 2 → moves left */
+    .box2 {
+      width: 150px;
+      height: 80px;
+      background: rgb(129, 64, 64);
+      border-radius: 10px;
+      position: absolute;
+      top: 150px;
+      right: 0;
+
+      animation: moveLeft 5s infinite ease-in-out;
+    }
+
+    /* CIRCLE → bouncing */
+    .circle {
+      width: 80px;
+      height: 80px;
+      background: purple;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    /* Animations */
+
+    @keyframes moveRight {
+      from {
+        left: 0;
+      }
+      to {
+        left: 85%;
+      }
+    }
+
+    @keyframes moveLeft {
+      from {
+        right: 0;
+      }
+      to {
+        right: 85%;
+      }
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-150px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="circle"></div>
+  </div>
+</body>
+</html>
