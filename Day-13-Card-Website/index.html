@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="card.png" type="image/x-icon" />
+    <title>Card Website</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      min-height: 700px ;
+      background: #bbc6ce;
+      background: linear-gradient(
+        90deg,
+        rgba(187, 198, 206, 1) 35%,
+        rgb(16, 92, 107) 100%
+      );
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+        width: 360px;
+        height: 600px;
+        background: white;
+        border-radius: 20px  ;
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        gap: 25px;
+        padding: 25px;
+    }
+    .card img{
+        height: 57%;
+        border-radius: 10px;
+    }
+    .card h2{
+        font-weight: bold;
+        font-size: 1.5rem ;
+    }
+  </style>
+  <body>
+    <div class="container">
+        <div class="card">
+            <img src="qr.png" alt="">
+            <h2>Improve Your Frontend Skills By Developing Projects</h2>
+        <p style="text-align: left; font-size: 1rem; line-height: 1.5;">
+        Build real projects, enhance your coding skills, and showcase your frontend portfolio with practical examples.
+    </p>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Website</title>
+    <style>
+      .container {
+        height: 100%;
+        width: 100%;
+        min-height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #477d80;
+        background: linear-gradient(
+          0deg,
+          rgba(93, 215, 222, 1) 0%,
+          rgba(255, 242, 242, 1) 100%
+        );
+      }
+      .card {
+        background: white;
+        height: 550px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .card img {
+        height: 30%;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        text-align: center;
+        width: 70%;
+      }
+      .amountbox {
+        width: 80%;
+      height: 50px;
+        max-width: 300px;
+        background: #bababa7d;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px auto;
+        padding: 0px;
+      }
+
+      .leftbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .leftbox .img img {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 5px;
+        object-fit: cover;
+        margin-left: 4px;
+      }
+
+      .annualplan {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1.2;
+      }
+
+      .annualplan h2 {
+        font-size: 1rem;
+        margin: 0;
+      }
+
+      .annualplan p {
+        font-size: 0.9rem;
+        margin: 0;
+        color: #555;
+      }
+
+      .rightbox a {
+        text-decoration: none;
+        color: #2e2b2b;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-right: 10px;
+      }
+      .paymentbutton {
+        width: 80%;
+        height: 50px;
+        max-width: 300px;
+        background: rgb(0, 0, 141);
+        border-radius: 10px;
+        margin: 10px;
+        color: white;
+        font-weight: bold;
+        box-shadow:
+          rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+          rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(46, 43, 43);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="book.jpg" alt="" />
+        <div class="textbox">
+          <h2>Order Summary</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa modi
+            ea omnis dolore accusamus perferendis, voluptatum at sunt? Debitis,
+            commodi.
+          </p>
+        </div>
+        <!-- Amount Box -->
+        <div class="amountbox">
+          <div class="leftbox">
+            <div class="img">
+              <img src="music.png" alt="Plan Icon" />
+            </div>
+            <div class="annualplan">
+              <h2>Annual Plan</h2>
+              <p>RS 99.9 / Year</p>
+            </div>
+          </div>
+          <div class="rightbox">
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <button class="paymentbutton">Proceed to Payment</button>
+        <div class="cancelorder">
+          <a href="">Cancel Order</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
