@@ -48,5 +48,5 @@ console.log("Null:", variable);
 // -------------------------------
 // 4. Simple Variable Example
 // -------------------------------
-let num = 20;
-console.log("Final number:", num);
+let number = 20;
+console.log("Final number:", number);
