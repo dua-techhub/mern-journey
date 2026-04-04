@@ -50,7 +50,4 @@ console.log(getMultiplication(2, 12));
 // console.log(getMultiplication(2, 12));
 // Arrow Function
 
-let solve = (a, b) => {
-  return a * b;
-};
-console.log(solve(2, 12));
+
